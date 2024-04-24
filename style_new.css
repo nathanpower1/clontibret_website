@@ -1,0 +1,210 @@
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  /* Header */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(255, 217, 0);
+    color: white;
+}
+  /* Increase the font size h1 in heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* navigation bar  https://www.w3schools.com/css/css_navbar.asp*/
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* navigation bar links https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* navigation bar link styled to be on right side https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Change color of the navbar links on hover https://www.w3schools.com/css/css_navbar_horizontal.asp */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Column container https://www.w3schools.com/css/css_website_layout.asp*/
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+ 
+  /* Sidebar on left*/
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: auto;
+  }
+/* body of sidebar*/
+  .side_body {
+    padding: 30px;
+  }
+
+/*side bar on lotto page*/
+  .side_lotto {
+    text-align: center;
+  }
+
+/* button on lotto page https://www.w3schools.com/howto/howto_css_pill_button.asp*/
+  .lotto_button {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  /* balls on lotto page displaying lotto number inspired by https://www.cappaghgaa.com/draws*/
+  .lotto-balls p {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border: solid 2px  rgb(255, 217, 0);
+    background-color: #ffffff;
+    color:  rgb(255, 217, 0);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0px 0px 7px 0px rgba(197,197,197,0.75);
+  }
+
+  /* Main body on lotto and index page */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+
+/* main body on champ page*/
+  .main_champ {   
+    background-color: white;
+    padding: 20px;
+  }
+/*video on champ page https://www.w3schools.com/tags/tag_iframe.ASP*/
+  iframe{
+    margin:0 auto;
+    display:block;
+  }
+
+  
+  /* when the screen is less than 700px wide, make the side and main stack https://www.w3schools.com/html/html_responsive.asp*/
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* when the screen is less than 400px wide, make the navigation links stack https://www.w3schools.com/html/html_responsive.asp*/
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  /*https://www.w3schools.com/css/css_image_gallery.asp*/
+/* border on gallery images*/
+.gallery {
+    border: 1px solid #ccc;
+  }
+ 
+/* border on gallery images changes on hover*/
+.gallery:hover {
+    border: 1px solid #777;
+  }
+ 
+/* gallery images width fits boxes*/
+.gallery img {
+    width: 100%;
+  }
+
+/* description caption on gallery images*/
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.resp {
+    padding: 10px 6px;
+    float: left;
+    width: 24.99999%;
+  }
+/* list formating*/
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    border: 1px solid #ddd;
+    margin-top: -1px; 
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-align: center;
+  }
+/* table formatting for header and table data*/
+table, th, td {
+    background:  #f6f6f6;
+    padding: 20px;
+    }
+/* table data width */
+td {
+    width:50% 
+  }
+
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 217, 0);
+  }
+
+  footer {
+    float: left;
+    bottom: 0px;
+    width: 100%;
+    padding: 40px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 217, 0);
+  }
